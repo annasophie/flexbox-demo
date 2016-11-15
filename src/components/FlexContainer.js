@@ -18,12 +18,12 @@ const FlexContainer = ({ customStyle, header }) => {
   } = styles;
 
   return (
-    <View style={{...container}}>
+    <View style={container}>
       <View style={titleBar}>
         <Text style={title}>{header}</Text>
       </View>
       <View style={customStyle}>
-        <View style={{...box, ...powder}}></View>
+        <View style={[box, powder]}></View>
         <View style={{...box, ...sky}}></View>
         <View style={{...box, ...steel}}></View>
       </View>
